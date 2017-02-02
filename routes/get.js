@@ -46,8 +46,10 @@ router.route('/get')
 			// handling the remander of the list 
 			for(var i=1; i<sortedByOrder.length; i++) {
 				if(sortedByOrder[i].type === 'Person') {
-					if(output[output.length-1].type === sortedByOrder[i].type)
+					if(output[output.length-1].type === sortedByOrder[i].type) {
 						output[output.length-1].people.push(sortedByOrder[i].name);
+						output[output.length-1].order = sortedByOrder[i].order;
+					}
 					else{
 						output.push({
 							"type": sortedByOrder[i].type,
