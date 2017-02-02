@@ -29,16 +29,17 @@ router.route('/get')
 			// handling base case
 			if(sortedByOrder[0].type === 'Person'){
 				output.push({
-					"type": sortedByOrder[i].type,
-					"order": sortedByOrder[i].order,
-					"people": [sortedByOrder[i].name]
+					"type": sortedByOrder[0].type,
+					"order": sortedByOrder[0].order,
+					"people": [sortedByOrder[0].name]
 				})
 			}
+			
 			else if(sortedByOrder[0].type === 'Place'){
 				output.push({
-					"type": sortedByOrder[i].type,
-					"order": sortedByOrder[i].order,
-					"name": sortedByOrder[i].name
+					"type": sortedByOrder[0].type,
+					"order": sortedByOrder[0].order,
+					"name": sortedByOrder[0].name
 				})
 			}
 
