@@ -23,20 +23,14 @@ router.route('/get')
 			return a.order - b.order;
 		});
 
-
+		// grouping
 		var output = [];
 		for( var i=1; i<sortedByOrder.length; i++){
 			if(sortedByOrder[i].type === sortedByOrder[i-1]){
-				res.send(sortedByOrder[i].type)
+				console.log("loop")
 			}
 		}
-
-		/*var sortedByOrder.reduce(function(a,b){
-			if(a[a.length-1].type === 'Person' && b.type === 'Person'){
-				return a.people.push(b.name);
-			}
-		},[]);*/
-		
+		res.send("end of loop");	
 
 	});
 });
