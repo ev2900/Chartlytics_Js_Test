@@ -5,9 +5,9 @@ var mongoose = restful.mongoose;
 
 // Schema
 var spotSchema = new mongoose.Schema({
-	firstName: String,
-	lastName: String,
-	email: String,
+	type: String,
+	order: Number,
+	type: String,
 });
 
 // Return model
