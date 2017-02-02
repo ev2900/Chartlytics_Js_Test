@@ -26,11 +26,11 @@ router.route('/get')
 		// grouping
 		var output = [];
 		for(var i=0; i<sortedByOrder.length; i++) {
-			if(sortedOrder[i].type === 'Person') {
+			if(sortedByOrder[i].type === 'Person') {
 				output.push({
-					"type": sortedOrder[i].type,
-					"order": sortedOrder[i].order,
-					"people": [sortedOrder[i].name]
+					"type": sortedByOrder[i].type,
+					"order": sortedByOrder[i].order,
+					"people": [sortedByOrder[i].name]
 				});
 			}
 		}
