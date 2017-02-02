@@ -35,11 +35,11 @@ router.route('/get')
 				})
 			}
 			else if(sortedByOrder[0].type === 'Place'){
-				output.push{
+				output.push({
 					"type": sortedByOrder[i].type,
 					"order": sortedByOrder[i].order,
 					"name": sortedByOrder[i].name
-				}
+				})
 			}
 
 			// handling the remander of the list 
