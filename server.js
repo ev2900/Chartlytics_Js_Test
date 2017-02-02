@@ -16,6 +16,7 @@ app.use(bodyParser.json());
 
 // Route
 app.use('/api', require('./routes/api'));
+app.use('/api', require('./routes/get'));
 
 // Start server
 app.listen(9000);
