@@ -1,6 +1,6 @@
 # Chartlytics Js Test
 
-My solution to the following coding challenge :
+My solution to the following coding challenge
 
 ## Description
 
