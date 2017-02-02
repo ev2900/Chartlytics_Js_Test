@@ -25,7 +25,7 @@ router.route('/get')
 
 
 		var output = [];
-		for(int i=1; i<sortedByOrder.length; i++){
+		for( var i=1; i<sortedByOrder.length; i++){
 			if(sortedByOrder[i].type === sortedByOrder[i-1]){
 				res.send(sortedByOrder[i].type)
 			}
