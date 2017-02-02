@@ -19,15 +19,19 @@ router.route('/get')
 			res.send(err);
 		
 		// sort the data
-		var sortedByOrder = data.sort(function(a,b){
+		var sortedByOrder = data.sort(function(a,b) {
 			return a.order - b.order;
 		});
 
 		// grouping
 		var output = [];
-		for( var i=1; i<sortedByOrder.length; i++){
-			if(sortedByOrder[i].type === sortedByOrder[i-1]){
-				console.log("loop")
+		for(var i=0; i<sortedByOrder.length; i++) {
+			if(sortedOrder[i].type === 'Person') {
+				output.push({
+					"type": sortedOrder[i].type;
+					"order": sortedOrder[i].order;
+					"people": [sortedOrder[i].name];
+				});
 			}
 		}
 		res.send("end of loop");	
