@@ -12,10 +12,19 @@ var router = express.Router();
 router.route('/get') 
 
 .get(function(req, res) {
-	data.find(function(err, sortedData) {
+	data.find(function(err, data) {
 		if (err) 
 			res.send(err);
-		res.json(sortedData);
+		var sortedByOrder = data.sort(function(a,b){
+			return a.order - a.order;
+		});
+
+		res.send(sortedByOrder);
+
+		
+
+
+		//res.json(sortedData);
 	});
 });
 
