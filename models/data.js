@@ -7,7 +7,7 @@ var mongoose = restful.mongoose;
 var spotSchema = new mongoose.Schema({
 	type: String,
 	order: Number,
-	type: String,
+	name: String,
 });
 
 // Return model
