@@ -48,6 +48,13 @@ router.route('/get')
 				if(sortedByOrder[i].type === 'Person') {
 					if(output[output.length-1].type === sortedByOrder[i].type)
 						output[output.length-1].people.push(sortedByOrder[i].name);
+					else{
+						output.push({
+							"type": sortedByOrder[i].type,
+							"order": sortedByOrder[i].order,
+							"people": [sortedByOrder[i].name]
+						})
+					}
 				}
 				else if(sortedByOrder[i].type === 'Place'){
 					output.push({
