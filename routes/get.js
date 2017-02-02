@@ -28,9 +28,9 @@ router.route('/get')
 		for(var i=0; i<sortedByOrder.length; i++) {
 			if(sortedOrder[i].type === 'Person') {
 				output.push({
-					"type": sortedOrder[i].type;
-					"order": sortedOrder[i].order;
-					"people": [sortedOrder[i].name];
+					"type": sortedOrder[i].type,
+					"order": sortedOrder[i].order,
+					"people": [sortedOrder[i].name]
 				});
 			}
 		}
