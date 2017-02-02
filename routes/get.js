@@ -13,10 +13,12 @@ router.route('/get')
 
 .get(function(req, res) {
 	data.find(function(err, data) {
+		
 		if (err) 
 			res.send(err);
+		
 		var sortedByOrder = data.sort(function(a,b){
-			return a.order - a.order;
+			return a.order - b.order;
 		});
 
 		res.send(sortedByOrder);
