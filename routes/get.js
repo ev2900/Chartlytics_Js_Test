@@ -14,19 +14,30 @@ router.route('/get')
 .get(function(req, res) {
 	data.find(function(err, data) {
 		
+		// error 
 		if (err) 
 			res.send(err);
 		
+		// sort the data
 		var sortedByOrder = data.sort(function(a,b){
 			return a.order - b.order;
 		});
 
-		res.send(sortedByOrder);
 
+		var output = [];
+		for(int i=1; i<sortedByOrder.length; i++){
+			if(sortedByOrder[i].type === sortedByOrder[i-1]){
+				res.send(sortedByOrder[i].type)
+			}
+		}
+
+		/*var sortedByOrder.reduce(function(a,b){
+			if(a[a.length-1].type === 'Person' && b.type === 'Person'){
+				return a.people.push(b.name);
+			}
+		},[]);*/
 		
 
-
-		//res.json(sortedData);
 	});
 });
 
