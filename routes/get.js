@@ -34,7 +34,7 @@ router.route('/get')
 				});
 			}
 		}
-		res.send("end of loop");	
+		res.send(output);	
 
 	});
 });
