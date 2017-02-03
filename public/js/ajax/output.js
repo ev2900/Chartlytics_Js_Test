@@ -9,10 +9,10 @@ $(function () {
 				$output.append(
 					'<p>' + item.type + '</p>'		+
 					'<p>' + item.order + '</p>'		+
-					'<p>' + item.name + '</p>'		+
-					'<p>' + item.people + '</p>'	+
-					'<br>'
 				);
+				if(item.name == "undefined") {
+					var $a = 'a';
+				}
 			});		
 		}
 	});
