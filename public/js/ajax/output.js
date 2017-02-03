@@ -7,7 +7,7 @@ $(function () {
 		success: function(output) {
 			$.each(output, function(i, item) {
 				
-				if(item.test) {
+				if(item.type) {
 					alert("hey");
 				}
 
@@ -15,8 +15,7 @@ $(function () {
 					'<p>' + item.type + '</p>'		+
 					'<p>' + item.order + '</p>'		
 				);
-			});	
-			alert('loop ran');	
+			});		
 		}
 	});
 });
