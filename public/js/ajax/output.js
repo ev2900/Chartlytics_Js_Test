@@ -7,10 +7,6 @@ $(function () {
 		success: function(output) {
 			$.each(output, function(i, item) {
 				
-				if(item.name == "Ohio") {
-					alert("Ohio");
-				}
-
 				$output.append(
 					'<p>' + item.type + '</p>'		+
 					'<p>' + item.order + '</p>'		+
