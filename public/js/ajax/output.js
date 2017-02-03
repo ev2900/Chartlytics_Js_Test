@@ -7,14 +7,22 @@ $(function () {
 		success: function(output) {
 			$.each(output, function(i, item) {
 				
-				if(item.type) {
-					alert("hey");
+				if(item.name) {
+					$output.append(
+						'<p>' + item.type + '</p>'		+
+						'<p>' + item.order + '</p>' 	+
+						'<p>' + item.name + '</p>'		
+					);
 				}
 
-				$output.append(
-					'<p>' + item.type + '</p>'		+
-					'<p>' + item.order + '</p>'		
-				);
+				else if(item.people) {
+					$output.append(
+						'<p>' + item.type + '</p>'		+
+						'<p>' + item.order + '</p>' 	+
+						'<p>' + item.peopl + '</p>'		
+					);	
+				}
+
 			});		
 		}
 	});
