@@ -7,7 +7,7 @@ $(function () {
 		success: function(output) {
 			$.each(output, function(i, item) {
 				$output.append(
-					'<p>' + '<p>'
+					'<p>' + item.type + '<p>'
 				);
 			});		
 		}
