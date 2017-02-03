@@ -27,7 +27,7 @@ app.use('/api', require('./routes/get'));
 
 // Home Page 
 app.get('/', function(req, res) {
-	res.render("index.ejs");
+	res.render("index.esj");
 });
 
 // Start server
