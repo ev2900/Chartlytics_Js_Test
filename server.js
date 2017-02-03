@@ -3,6 +3,7 @@ var express = require('express');
 var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 var node_restful = require('node-restful');
+var path = require('path');
 
 // MongoDB (helpful hint. if this data base does not exist I will create it for you)
 mongoose.connect('mongodb://localhost/chartalytics');
@@ -27,7 +28,7 @@ app.use('/api', require('./routes/get'));
 
 // Home Page 
 app.get('/', function(req, res) {
-	res.render("index.esj");
+	res.render("index.ejs");
 });
 
 // Start server
