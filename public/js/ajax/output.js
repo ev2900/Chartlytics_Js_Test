@@ -11,7 +11,8 @@ $(function () {
 					$output.append(
 						'<p>' + item.type + '</p>'		+
 						'<p>' + item.order + '</p>' 	+
-						'<p>' + item.name + '</p>'		
+						'<p>' + item.name + '</p>'		+
+						'<br>'	
 					);
 				}
 
@@ -19,7 +20,8 @@ $(function () {
 					$output.append(
 						'<p>' + item.type + '</p>'		+
 						'<p>' + item.order + '</p>' 	+
-						'<p>' + item.peopl + '</p>'		
+						'<p>' + item.people + '</p>'	+
+						'<br>'	
 					);	
 				}
 
