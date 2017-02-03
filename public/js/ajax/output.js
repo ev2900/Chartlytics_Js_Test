@@ -14,7 +14,7 @@ $(function () {
 				$output.append(
 					'<p>' + item.type + '</p>'		+
 					'<p>' + item.order + '</p>'		+
-				);
+				)
 
 			});		
 		}
