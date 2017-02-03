@@ -9,18 +9,18 @@ $(function () {
 				
 				if(item.name) {
 					$output.append(
-						'<p>' + item.type + '</p>'		+
-						'<p>' + item.order + '</p>' 	+
-						'<p>' + item.name + '</p>'		+
+						'<p>' + 'Type ' + item.type + '</p>'	+
+						'<p>' + 'Order ' + item.order + '</p>' 	+
+						'<p>' + 'Name ' + item.name + '</p>'	+
 						'<br>'	
 					);
 				}
 
 				else if(item.people) {
 					$output.append(
-						'<p>' + item.type + '</p>'		+
-						'<p>' + item.order + '</p>' 	+
-						'<p>' + item.people + '</p>'	+
+						'<p>' + 'Type ' + item.type + '</p>'	+
+						'<p>' + 'Order ' + item.order + '</p>' 	+
+						'<p>' + 'Name ' + item.people + '</p>'	+
 						'<br>'	
 					);	
 				}
