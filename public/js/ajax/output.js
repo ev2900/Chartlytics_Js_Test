@@ -7,7 +7,13 @@ $(function () {
 		success: function(output) {
 			$.each(output, function(i, item) {
 				$output.append(
-					'<p>' + item.people + '<p>'
+					
+					'<p>' + item.type + '</p>'	+
+					'<p>' + item.order + '</p>'	+
+					
+					if (item.name == 'undefined') {
+						'<p>' + item.people + '</p>';
+					}
 				);
 			});		
 		}
