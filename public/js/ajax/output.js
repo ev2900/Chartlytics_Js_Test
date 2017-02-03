@@ -9,7 +9,7 @@ $(function () {
 				$output.append(
 					'<p>' + item.type + '</p>'		+
 					'<p>' + item.order + '</p>'		+
-				);
+				)
 				if(item.name == "undefined") {
 					var $a = 'a';
 				}
