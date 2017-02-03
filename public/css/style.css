@@ -1,8 +1,12 @@
 #col_one {
 	margin-top: 125 px;
-	margin-left: 50 ps;
+	margin-left: 75 ps;
 }
 
 #col_two {
 	margin-top: 125 px;
+}
+
+#output {
+	margin-top: 75 px;
 }
