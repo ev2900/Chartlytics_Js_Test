@@ -15,6 +15,8 @@ $(function () {
 					'<p>' + item.type + '</p>'		+
 					'<p>' + item.order + '</p>'		
 				);
+
+				alert('test');
 			});		
 		}
 	});
