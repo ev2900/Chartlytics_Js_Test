@@ -16,7 +16,7 @@ $(function () {
 
 		$.ajax({
 			type: 'POST',
-			url: 'http://35.161.233.165:9000/api/get',
+			url: 'http://35.161.233.165:9000/api/upload',
 			data: new_person,
 			success: function() {
 				alert('good');
