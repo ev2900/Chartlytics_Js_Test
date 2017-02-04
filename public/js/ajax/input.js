@@ -9,9 +9,9 @@ $(function () {
 		ev.preventDefault();
 
 		var new_person = {
-			type:$person_person.val();
-			order:$person_order.val();
-			name:$person_name.val();
+			type:$person_person.val(),
+			order:$person_order.val(),
+			name:$person_name.val()
 		};
 
 		$.ajax({
