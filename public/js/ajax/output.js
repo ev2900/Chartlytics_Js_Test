@@ -9,10 +9,11 @@ $(function () {
 				
 				if(item.name) {
 					$output.append(
+						'<div>' +
 						'<p>' + 'Type: ' + item.type + '</p>'	+
 						'<p>' + 'Order: ' + item.order + '</p>' 	+
 						'<p>' + 'Name: ' + item.name + '</p>'	+
-						'<br>'	
+						'<br>' + '<div>'
 					);
 				}
 
@@ -29,3 +30,7 @@ $(function () {
 		}
 	});
 });
+
+$(function () {
+	
+})
